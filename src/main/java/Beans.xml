@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+    <beans xmlns="http://www.springframework.org/schema/beans"
+    	xmlns:context="http://www.springframework.org/schema/context"
+   		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+    	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/data/mongo   
+        http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd    
+        http://www.springframework.org/schema/context  
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+        
+        <context:annotation-config></context:annotation-config>
+        <!-- spring会自动扫描xxx路径下的注解,工程启动时，会将制定目录下的以@Service等标记的类生成bean -->
+		<context:component-scan base-package="helloworld.spring"/>
+		
+		<!--
+       	<bean id="helloworld" class="helloworld.spring.helloworld">
+           	<property name="message" value="Hello World!"/>
+       	</bean>
+       	
+       	<bean id="zoo" class="helloworld.spring.Zoo" />
+		<bean id="tiger" class="helloworld.spring.Tiger" />
+		<bean id="monkey" class="helloworld.spring.Monkey" />      	
+       	-->
+       	
+    	
+      	
+    </beans>

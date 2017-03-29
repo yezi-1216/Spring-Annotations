@@ -1,0 +1,1 @@
+本用例介绍了如何使用Spring的注解@Service @Autowired,程序入口在APP.java文件中。
